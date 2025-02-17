@@ -1,13 +1,13 @@
-KAIST CS220
+KAIST CS20200 (Formerlly CS200)
 ===
 
-Welcome to the `main` repository of CS220. This is where you find resources for
+Welcome to the `main` repository of CS20200. This is where you find resources for
 the homeworks and in-class activities. Also, this is the central place where you
 can ask questions and discuss with your peers and TAs.
 
 # Syllabus and Slides
 
-You should visit [this page](https://softsec.kaist.ac.kr/courses/2024s-cs220/) to see them.
+You should visit [this page](https://softsec.kaist.ac.kr/courses/2024s-cs20200/) to see them.
 
 # Questions
 
@@ -46,7 +46,7 @@ CLI](https://cli.github.com/) for the third method.
    [this](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#https).
 
     ```bash
-    git clone https://github.com/KAIST-CS220/CS220-Main.git
+    git clone https://github.com/KAIST-CS20200/CS20200-Main.git
     ```
 
 2. Using SSH
@@ -56,13 +56,13 @@ CLI](https://cli.github.com/) for the third method.
 
 
     ```bash
-    git clone git@github.com:KAIST-CS220/CS220-Main.git
+    git clone git@github.com:KAIST-CS20200/CS20200-Main.git
     ```
 
 3. Using GitHub CLI
 
     ```bash
-    gh repo clone KAIST-CS220/CS220-Main
+    gh repo clone KAIST-CS20200/CS20200-Main
     ```
 
 ### How do I use Git?
