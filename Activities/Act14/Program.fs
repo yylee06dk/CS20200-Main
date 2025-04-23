@@ -9,13 +9,13 @@ type Animal () =
 
 type Dog (age: int) =
   inherit Animal ()
-  override __.Age = failwith "Implement"
-  override __.MakeSound () = failwith "Implement"
+  override __.Age = age
+  override __.MakeSound () = printfn "Woof"
 
 type Cat (age: int) =
   inherit Animal ()
-  override __.Age = failwith "Implement"
-  override __.MakeSound () = failwith "Implement"
+  override __.Age = age
+  override __.MakeSound () = printfn "Woof"
 
 let makeAnimalList cnt =
   List.init cnt (fun idx ->
@@ -24,7 +24,8 @@ let makeAnimalList cnt =
 
 /// Compute the sum of ages of the given animals.
 let sumAnimalAges (lst: Animal list) =
-  42
+  lst
+  |> List.fold (fun sum animal -> sum + animal.Age) 0
 
 /// This is the main entry point.
 [<EntryPoint>]
