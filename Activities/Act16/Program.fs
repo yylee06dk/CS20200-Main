@@ -7,14 +7,14 @@ type IShape =
 
 type Rectangle (width: float, height: float) =
   interface IShape with
-    member __.Area = failwith "Implement"
+    member __.Area = width * height
 
 type Circle (radius: float) =
   interface IShape with
-    member __.Area = failwith "Implement"
+    member __.Area = System.Math.PI * radius * radius
 
-let isCircleLargerThanRectangle (circ: Circle) (rect: Rectangle) =
-  failwith "Implement"
+let isCircleLargerThanRectangle (circ: IShape) (rect: IShape) =
+  circ.Area > rect.Area
 
 /// This is the main entry point.
 [<EntryPoint>]
