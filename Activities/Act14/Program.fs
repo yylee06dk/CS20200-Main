@@ -24,8 +24,7 @@ let makeAnimalList cnt =
 
 /// Compute the sum of ages of the given animals.
 let sumAnimalAges (lst: Animal list) =
-  lst
-  |> List.fold (fun sum animal -> sum + animal.Age) 0
+  List.fold (fun sum (animal: Animal) -> sum + animal.Age) 1 lst
 
 /// This is the main entry point.
 [<EntryPoint>]

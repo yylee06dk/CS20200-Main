@@ -9,12 +9,12 @@ type Stream<'a> =
 module Stream =
   let car stream =
     match stream with
-    | Cons (hd, tl) -> hd
+    | Cons (hd, _) -> hd
     | Nil -> failwith "Empty"
 
   let cdr stream = 
     match stream with
-    | Cons (hd, tl) -> tl ()
+    | Cons (_, tl) -> tl ()
     | Nil -> failwith "Empty"
 
   let rec take n stream = 

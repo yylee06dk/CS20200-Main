@@ -3,7 +3,8 @@
 module CS220.Program
 
 /// Fix this.
-let length _ = failwith "Implement"
+let inline length (obj: 'T when 'T: (member Length: int)) = 
+  obj.Length
 
 /// This is the main entry point.
 [<EntryPoint>]
