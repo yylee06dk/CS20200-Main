@@ -15,7 +15,7 @@ type Dog (age: int) =
 type Cat (age: int) =
   inherit Animal ()
   override __.Age = age
-  override __.MakeSound () = printfn "Woof"
+  override __.MakeSound () = printfn "Meow"
 
 let makeAnimalList cnt =
   List.init cnt (fun idx ->

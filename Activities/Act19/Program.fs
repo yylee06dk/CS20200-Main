@@ -18,22 +18,24 @@ let account initialBalance =
         else
           return! loop balance
       | GetBalance ch ->
-        // Hint: use the `Reply` method of AsyncReplyChannel
-        failwith "Implement"
+        ch.Reply balance
+        return! loop balance
     }
     loop initialBalance
   )
 
 // Hint: use the `PostAndReply` method of MailboxProcessor.
 let currentBalance (account: MailboxProcessor<BankMessage>) =
-  failwith "Implement"
+  account.PostAndReply GetBalance
+  |> printfn "%d"
 
 let withDraw (account: MailboxProcessor<BankMessage>) amount =
-  failwith "Implement"
+  async { account.Post (Withdraw amount) }
+
 
 let test (account: MailboxProcessor<BankMessage>) =
-  [ withDraw account 1000
-    withDraw account 1500 ]
+  [ withDraw account 1500
+    withDraw account 1000 ]
   |> Async.Parallel
   |> Async.Ignore
   |> Async.RunSynchronously
