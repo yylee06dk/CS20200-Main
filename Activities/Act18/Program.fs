@@ -11,7 +11,7 @@ let inf =
 let rec pairwise lst =
   match lst with
   | LazyList.Cons (hd1, LazyList.Cons (hd2, tl)) ->
-    LazyList.consDelayed ((hd1, hd2), (fun () -> pairwise (tl)))
+    LazyList.consDelayed (hd1, hd2) (fun () -> pairwise tl)
   | _ -> failwith "Err"
 
   
