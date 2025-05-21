@@ -3,11 +3,13 @@
 module CS220.Program
 
 type ListBuilder () =
+  // seq<list<int>> -> list<int>
   member _.For (exprs, f) =
-    failwith "Implement"
+    exprs |> Seq.collect f |> Seq.toList
 
+  // = Return (Wrap the value)
   member _.Yield (x) =
-    failwith "Implement"
+    [ x ] 
 
 let mylist = ListBuilder ()
 
