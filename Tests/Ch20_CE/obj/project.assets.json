@@ -112,11 +112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/yylee/Desktop/2025_spring/cs220/Ch20_CE/SimpleLogger.fsproj",
+      "projectUniqueName": "/home/yylee/Desktop/2025_spring/cs220/CS20200-Main/Tests/Ch20_CE/SimpleLogger.fsproj",
       "projectName": "SimpleLogger",
-      "projectPath": "/home/yylee/Desktop/2025_spring/cs220/Ch20_CE/SimpleLogger.fsproj",
+      "projectPath": "/home/yylee/Desktop/2025_spring/cs220/CS20200-Main/Tests/Ch20_CE/SimpleLogger.fsproj",
       "packagesPath": "/home/yylee/.nuget/packages/",
-      "outputPath": "/home/yylee/Desktop/2025_spring/cs220/Ch20_CE/obj/",
+      "outputPath": "/home/yylee/Desktop/2025_spring/cs220/CS20200-Main/Tests/Ch20_CE/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/yylee/.nuget/NuGet/NuGet.Config"

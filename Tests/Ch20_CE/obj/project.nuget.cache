@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zgswpw3cAx8=",
+  "dgSpecHash": "XUpLOOUJyMM=",
   "success": true,
-  "projectFilePath": "/home/yylee/Desktop/2025_spring/cs220/Ch20_CE/SimpleLogger.fsproj",
+  "projectFilePath": "/home/yylee/Desktop/2025_spring/cs220/CS20200-Main/Tests/Ch20_CE/SimpleLogger.fsproj",
   "expectedPackageFiles": [
     "/home/yylee/.nuget/packages/fsharp.core/9.0.101/fsharp.core.9.0.101.nupkg.sha512"
   ],

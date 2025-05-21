@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("SimpleLogger")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f924b53dd5c3cf5f88c7f9c390dea2efa6ce6e8e")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("SimpleLogger")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("SimpleLogger")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
