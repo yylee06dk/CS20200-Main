@@ -29,14 +29,22 @@ let expr = { Parse = fun s -> Parser.runOnInput exprRef s }
 
 let add =
   parser {
-    failwith "Implement"
-    return Add (Number 0, Number 0)
+    let! n = number
+    let! _ = char ' '
+    let! _ = char '+'
+    let! _ = char ' '
+    let! e = expr
+    return Add (n, e)
   }
 
 let sub =
   parser {
-    failwith "Implement"
-    return Sub (Number 0, Number 0)
+    let! n = number
+    let! _ = char ' '
+    let! _ = char '-'
+    let! _ = char ' '
+    let! e = expr
+    return Sub (n, e)
   }
 
 exprRef <- add <|> sub <|> number

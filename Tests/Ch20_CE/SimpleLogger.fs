@@ -46,6 +46,6 @@ let main _ =
 
   match workflow 1 2 4 -8 with
   | None -> printfn "Case4 : None"
-  | Some x -> printfn "Case4 : Sum is %d" x
+  | Some x -> printfn "Case3 : Sum is %d" x
 
   0
